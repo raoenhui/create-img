@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server/app.js",
     "dev": "node-dev server/app.js",
-    "website": "webpack --watch --config ./websit/webpack.config.js"
+    "web": "webpack --watch --config ./web/webpack.config.js"
   },
   "repository": {
     "type": "git",

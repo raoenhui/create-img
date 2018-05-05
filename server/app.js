@@ -35,8 +35,8 @@ app.use(router.routes());
 
  function list(ctx) {
   let sizeAry=ctx.params.size?ctx.params.size.split('x'):[300,300];
-  let shape=ctx.params.shape?ctx.params.shape:'rect';
-  let bgColor=ctx.params.bgColor?`#${ctx.params.bgColor}`:`#ff0000`;
+  let shape=ctx.params.shape?ctx.params.shape:'rectangle'; //'rectangle||circle'
+  let bgColor=ctx.params.bg?`#${ctx.params.bg}`:`#000000`;
 
   var imgBuffer=getCanvas({width:Number(sizeAry[0]),height:Number(sizeAry[1]),shape,bgColor});
   ctx.type="image/jpg"

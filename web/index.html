@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>图片生成</title>
+    <meta name="description" content="图片,图片生成,jpg"/>
+    <meta name="keywords" content="html template, jpg, png, img,image,images design"/>
+    <meta name="author" content="raoenhui"/>
+    <!-- Favicons (created with http://realfavicongenerator.net/)-->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="img/favicons/manifest.json">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Normalize -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Owl -->
+    <link rel="stylesheet" type="text/css" href="css/owl.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.1.0/css/font-awesome.min.css">
+    <!-- Elegant Icons -->
+    <link rel="stylesheet" type="text/css" href="fonts/eleganticons/et-icons.css">
+    <!-- Main style -->
+    <link rel="stylesheet" type="text/css" href="css/cardio.css">
+    <!-- Bootstrap colorpicker -->
+    <link href="https://cdn.bootcss.com/bootstrap-colorpicker/3.0.0-beta.1/css/bootstrap-colorpicker.css" rel="stylesheet">
+</head>
+
+<body>
+<!--去掉loading页 	
+<div class="preloader">
+		<img src="img/loader.gif" alt="Preloader image">
+	</div> -->
+<nav class="navbar">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand" href="#"><img src="img/yhdlogo.jpg" data-active-url="img/yhdlogo.jpg" alt=""></a>-->
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right main-nav">
+                <li><a href="#intro">介绍</a></li>
+                <li><a href="#example">Example</a></li>
+                <li><a href="#pricing">联系</a></li>
+                <!-- <li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Sign Up</a></li> -->
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<header id="intro">
+    <div class="container">
+        <div class="table">
+            <div class="header-text">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h3 class="light white">Automatically generates images of different sizes and shapes.</h3>
+                        <h1 class="white typed">自动生成不同大小形状的图片。</h1>
+                        <span class="typed-cursor">|</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="cut cut-top"></div>
+    <div class="container">
+        <div class="row intro-tables">
+            <div class="col-md-4">
+                <div class="intro-table intro-table-hover intro-table-first">
+                    <h5 class="white heading hide-hover">Premium Membership</h5>
+                    <div class="bottom">
+                        <h4 class="white heading small-heading no-margin regular">Register Today</h4>
+                        <h4 class="white heading small-pt">20% Discount</h4>
+                        <a href="#" class="btn btn-white-fill expand">Register</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="intro-table intro-table-hover">
+                    <h5 class="white heading hide-hover">Premium Membership</h5>
+                    <div class="bottom">
+                        <h4 class="white heading small-heading no-margin regular">Register Today</h4>
+                        <h4 class="white heading small-pt">20% Discount</h4>
+                        <a href="#" class="btn btn-white-fill expand">Register</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="intro-table intro-table-hover">
+                    <h5 class="white heading hide-hover">blog</h5>
+                    <div class="bottom">
+                        <h4 class="white heading small-heading no-margin regular">前端妹子的博客</h4>
+                        <a href="#" class="btn btn-white-fill expand">进入</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="example" class="section section-padded">
+    <div class="container">
+        <div class="row text-center title">
+            <h2>Example</h2>
+        </div>
+        <div class="row services">
+            <div class="col-md-6">
+
+                <form class="form-horizontal">
+                    <fieldset>
+                        <div id="legend" class="">
+                            <legend class="">Edit Images</legend>
+                        </div>
+                        <div class="control-group">
+
+                            <!-- Text input-->
+                            <label class="control-label" >wdith</label>
+                            <div class="controls">
+                                <input id="cWidth" type="number" min="1" value="300" class="input-xlarge">
+                                <p class="help-block">image's width</p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+
+                            <!-- Text input-->
+                            <label class="control-label">height</label>
+                            <div class="controls">
+                                <input id="cHeight" type="number" min="1" value="300" class="input-xlarge">
+                                <p class="help-block">image's height</p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+
+                            <!-- Text input-->
+                            <label class="control-label">color</label>
+                            <div id="cp1" class="controls input-group colorpicker-component" title="Using input value">
+                                <input type="text" class="input-xlarge" value="#00000"/>
+                                <span class="input-group-addon"><i></i></span>
+                                <p class="help-block">color picker</p>
+                            </div>
+
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">shape</label>
+                            <div class="controls">
+                                <!-- Multiple Radios -->
+                                <label class="radio">
+                                    <input type="radio" value="rectangle(矩形)" data-val="rectangle" name="shape" checked="checked">
+                                    rectangle(矩形)
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" value="circle(圆)" data-val="circle" name="shape">
+                                    circle(圆)
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="control-group">
+
+                            <label class="control-label"></label>
+                            <div class="controls">
+                                <div id="cBtn" tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus"  data-content="copy success" data-clipboard-target="#cLink">copy link</div>
+                                <p id="cLink" class="help-block">localhost:3000/300x300/rect/00000</p>
+                            </div>
+
+                        </div>
+
+                    </fieldset>
+                </form>
+
+            </div>
+            <div class="col-md-6">
+                <img src="http://localhost:3000/" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="cut cut-bottom"></div>
+</section>
+
+<!-- Holder for mobile navigation -->
+<div class="mobile-nav">
+    <ul>
+    </ul>
+    <a href="#" class="close-link"><i class="arrow_up"></i></a>
+</div>
+<!-- Scripts -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/typewriter.js"></script>
+<script src="js/jquery.onepagenav.js"></script>
+<!--<script src="dist/bundle.js"></script>-->
+<script src="js/main.js"></script>
+<!-- Bootstrap colorpicker -->
+<script src="https://cdn.bootcss.com/bootstrap-colorpicker/3.0.0-beta.1/js/bootstrap-colorpicker.js"></script>
+<script src="https://cdn.bootcss.com/clipboard.js/2.0.0/clipboard.js"></script>
+</body>
+
+</html>
