@@ -47,7 +47,7 @@ jQuery(function($) {
 		});
 
         function showImg(){
-        	let templink=`localhost:3000/${imgObj.width}x${imgObj.height}/${imgObj.shape}/${imgObj.bgColor}`;
+        	let templink=`47.98.138.195:3000/${imgObj.width}x${imgObj.height}/${imgObj.shape}/${imgObj.bgColor}`;
             $('img').attr('src',`//${templink}`);
             $('#cLink').text(templink);
         }
