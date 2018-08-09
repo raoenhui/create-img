@@ -21,8 +21,7 @@ jQuery(function($) {
             width:300,
             height:300,
             shape:'rect',//or circular
-            bgColor:'00000',
-
+            bgColor:'00000'
         };
         $('#cWidth').keyup(function(e){
             imgObj.width=$.trim($('#cWidth').val());
