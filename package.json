@@ -7,7 +7,7 @@
     "start": "node server/app.js",
     "dev": "node-dev server/app.js",
     "web": "webpack --watch --config ./web/webpack.config.js",
-    "precommit": "webpack"
+    "precommit": "webpack  --config ./web/webpack.config.js"
   },
   "repository": {
     "type": "git",
