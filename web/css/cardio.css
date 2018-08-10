@@ -1133,6 +1133,8 @@ footer .social-footer li:hover a {
 .form-horizontal .controls input{
 	float:left;
 	height: 30px;
+	border: 1px solid #ccc;
+	padding-left: 2px;
 }
 .form-horizontal .controls .input-group-addon{
 	float:left;

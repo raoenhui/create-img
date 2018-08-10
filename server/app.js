@@ -34,9 +34,9 @@ app.use(router.routes());
  */
 
  function list(ctx) {
-  var sizeAry=ctx.params.size?ctx.params.size.split('x'):[300,300];
+  var sizeAry=ctx.params.size?ctx.params.size.split('x'):[200,200];
   var shape=ctx.params.shape?ctx.params.shape:'rectangle'; //'rectangle||circle'
-  var bgColor=ctx.params.bg?`#${ctx.params.bg}`:`#000000`;
+  var bgColor=ctx.params.bg?`#${ctx.params.bg}`:`#e83632`;
 
   var imgBuffer=getCanvas({width:Number(sizeAry[0]),height:Number(sizeAry[1]),shape,bgColor});
   ctx.type="image/jpg"

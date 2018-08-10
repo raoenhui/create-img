@@ -154,7 +154,7 @@
                             <!-- Text input-->
                             <label class="control-label">color</label>
                             <div id="cp1" class="controls input-group colorpicker-component" title="Using input value">
-                                <input type="text" class="input-xlarge" value="#00000"/>
+                                <input type="text" class="input-xlarge" value="#e83632"/>
                                 <span class="input-group-addon"><i></i></span>
                                 <p class="help-block">color picker</p>
                             </div>
@@ -164,11 +164,11 @@
                             <label class="control-label">shape</label>
                             <div class="controls">
                                 <!-- Multiple Radios -->
-                                <label class="radio">
+                                <label class="radio" style="width: 120px">
                                     <input type="radio" value="rectangle(矩形)" data-val="rectangle" name="shape" checked="checked">
                                     rectangle(矩形)
                                 </label>
-                                <label class="radio">
+                                <label class="radio" style="width: 80px">
                                     <input type="radio" value="circle(圆)" data-val="circle" name="shape">
                                     circle(圆)
                                 </label>
@@ -180,7 +180,9 @@
                             <label class="control-label"></label>
                             <div class="controls">
                                 <div id="cBtn" tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus"  data-content="copy success" data-clipboard-target="#cLink">copy link</div>
-                                <p id="cLink" class="help-block">http://47.98.138.195:3000/300x300/rect/00000</p>
+                                <a id="cLink" class="help-block" style="color:#333;font-size: 16px"  target="_blank" href="http://47.98.138.195:3000/200x200/rect/e83632">http://47.98.138.195:3000/200x200/rect/e83632</a>
+
+                                <div  style="color:#666">注：http://47.98.138.195:3000/宽x高/形状/颜色</div>
                             </div>
 
                         </div>
@@ -189,8 +191,8 @@
                 </form>
 
             </div>
-            <div class="col-md-6">
-                <img src="http://47.98.138.195:3000/" alt="">
+            <div class="col-md-6" style="text-align: center;">
+                <img src="http://47.98.138.195:3000/200x200/rect/e83632" alt="生成图">
             </div>
         </div>
     </div>
@@ -247,7 +249,8 @@
         <div class="cut cut-bottom"></div>
     </section>
 <!-- Scripts -->
-<script src="js/jquery-1.11.1.min.js"></script>
+<!--<script src="js/jquery-1.11.1.min.js"></script>-->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/wow.min.js"></script>

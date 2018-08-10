@@ -18,10 +18,10 @@ jQuery(function($) {
 
 
         var imgObj={
-            width:300,
-            height:300,
+            width:200,
+            height:200,
             shape:'rect',//or circular
-            bgColor:'00000'
+            bgColor:'e83632'
         };
         $('#cWidth').keyup(function(e){
             imgObj.width=$.trim($('#cWidth').val());
@@ -34,7 +34,7 @@ jQuery(function($) {
         });
 
         //bootstrap-coloepicker
-        $('#cp1').colorpicker().on('colorpickerChange', function (e) {
+        $('#cp1').colorpicker({"color": "#e83632"}).on('colorpickerChange', function (e) {
             imgObj.bgColor = $.trim(e.color.toString().replace(/#/, ""));
             showImg();
         });
@@ -48,7 +48,7 @@ jQuery(function($) {
         function showImg(){
         	var templink=`47.98.138.195:3000/${imgObj.width}x${imgObj.height}/${imgObj.shape}/${imgObj.bgColor}`;
             $('img').attr('src',`//${templink}`);
-            $('#cLink').text(`//${templink}`);
+            $('#cLink').text(`http://${templink}`);
         }
 
         //copy
