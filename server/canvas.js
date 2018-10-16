@@ -1,7 +1,8 @@
 var Canvas=require('canvas');
 module.exports = function (params) {
-  let {shape,width,height,bgColor}=params;
-    var canvas = new Canvas(width,width);
+    let {shape,width,height,bgColor}=params;
+    height=height||width;
+    var canvas = new Canvas(width,height);
     var  ctx = canvas.getContext('2d');
   if(shape=='circle'){
     //圆形
@@ -13,10 +14,9 @@ module.exports = function (params) {
 
     }else{
       //矩形
-          ctx.fillStyle = bgColor;
-         ctx.fillRect(0,0,width,height);
+       ctx.fillStyle = bgColor;
+       ctx.fillRect(0,0,width,height);
     }
-
 
   return canvas.toBuffer();
 };
