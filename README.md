@@ -18,7 +18,7 @@ npm start
   
 code地址为[https://github.com/raoenhui/create-img/tree/master/server](https://github.com/raoenhui/create-img/tree/master/server)。
  
-demo访问地址[http://47.98.138.195/img](http://47.98.138.195/img)。
+demo访问地址[http://img.frontendx.cn](http://img.frontendx.cn)。
 
 
 ## 原理
