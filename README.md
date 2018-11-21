@@ -105,9 +105,9 @@ module.exports = function (params) {
 ## 第三步 demo
 
 如想获取宽高为200px，颜色为#e83632的圆形。
-[http://47.98.138.195:3000/200x200/circle/e83632](http://47.98.138.195:3000/200x200/circle/e83632)
+[http://i.frontendx.cn/200x200/circle/e83632](http://i.frontendx.cn/200x200/circle/e83632)
 
-> 注：http://47.98.138.195:3000/宽x高/形状/颜色
+> 注：http://i.frontendx.cn/宽x高/形状/颜色
 
 ![website]({{ site.url }}/images/180501/demo.png)
 

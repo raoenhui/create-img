@@ -9,6 +9,12 @@
     "web": "webpack --watch --config ./web/webpack.config.js",
     "precommit": "webpack  --config ./web/webpack.config.js"
   },
+  "husky": {
+    "hooks": {
+     "pre-commit": "webpack  --config ./web/webpack.config.js",
+     "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+   }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/raoenhui/create-img.git"
