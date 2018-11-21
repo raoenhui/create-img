@@ -11,7 +11,7 @@
   },
   "husky": {
     "hooks": {
-     "pre-commit": "webpack  --config ./web/webpack.config.js",
+     "pre-commit": "webpack  --config ./web/webpack.config.js && git add --all",
      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
    }
   },
