@@ -6,14 +6,12 @@
   "scripts": {
     "start": "node server/app.js",
     "dev": "node-dev server/app.js",
-    "web": "webpack --watch --config ./web/webpack.config.js",
-    "precommit": "echo '1' && webpack  --config ./web/webpack.config.js"
+    "web": "webpack --watch --config ./web/webpack.config.js"
   },
   "husky": {
     "hooks": {
-     "pre-commit": "webpack  --config ./web/webpack.config.js && git add --all",
-     "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-   }
+      "pre-commit": "echo 'husky' && webpack  --config ./web/webpack.config.js && git add --all"
+    }
   },
   "repository": {
     "type": "git",
@@ -27,7 +25,7 @@
   },
   "homepage": "https://github.com/raoenhui/create-img#readme",
   "devDependencies": {
-    "husky": "^0.14.3",
+    "husky": "^1.2.0",
     "webpack": "^4.6.0",
     "webpack-cli": "^2.1.2"
   },
