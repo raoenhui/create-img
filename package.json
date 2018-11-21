@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server/app.js",
     "dev": "node-dev server/app.js",
-    "web": "webpack --watch --config ./web/webpack.config.js"
+    "web": "webpack --watch --config ./web/webpack.config.js",
+    "precommit": "echo '1' && webpack  --config ./web/webpack.config.js"
   },
   "husky": {
     "hooks": {
