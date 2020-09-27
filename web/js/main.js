@@ -47,8 +47,8 @@ jQuery(function($) {
 
         function showImg(){
         	var templink=`i.frontendx.cn/${imgObj.width}x${imgObj.height}/${imgObj.shape}/${imgObj.bgColor}`;
-            $('img').attr('src',`http://${templink}`);
-            $('#cLink').text(`http://${templink}`);
+            $('img').attr('src',`//${templink}`);
+            $('#cLink').text(`//${templink}`);
         }
 
         //copy
